@@ -9,14 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
+   
+    let emojis = ["🦋": "beautiful butterfly", "✨": "snazzy sparkle"]
+    
     @IBAction func showMessage(sender: UIButton) {
-        let alertController = UIAlertController(title: "BUTTERFLY", message: "YOU are in control of what you accomplish! Go out there and show the world all of your amazing ideas!", preferredStyle: UIAlertController.Style.alert)
+        let selectedEmotion = sender.titleLabel?.text
+        
+        let alertController = UIAlertController(title: "let's talk about EMOJItions", message: emojis["🦋"], preferredStyle: UIAlertController.Style.alert)
          alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        
         present(alertController, animated: true, completion: nil)
-        // checks to see which emoji has been pressed by sensing the location of the press
-        // displays the alert
-        // changes the message of the alert so it reflects the emoji pressed
     }
+    
+    @IBAction func showMessage2(sender: UIButton) {
+        let selectedEmotion = sender.titleLabel?.text
+        
+        let alertController = UIAlertController(title: "let's talk about EMOJItions", message: emojis["✨"], preferredStyle: UIAlertController.Style.alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

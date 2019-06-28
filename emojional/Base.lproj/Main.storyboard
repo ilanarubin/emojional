@@ -24,30 +24,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tjl-QH-DQ3">
-                                <rect key="frame" x="-63" y="44" width="541" height="492"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="butterflyEmoji" image="272125119007211">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rQ-d7-SLx">
+                                <rect key="frame" x="120.5" y="217" width="173" height="202"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="159"/>
+                                <state key="normal" title="🦋"/>
                                 <connections>
-                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="InA-c0-Fme"/>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t4Y-EG-V3g"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71j-nE-v83">
-                                <rect key="frame" x="40" y="450" width="335" height="245"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="starButton" image="star emoji"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="634-tS-Gwo">
+                                <rect key="frame" x="138" y="466" width="139" height="165"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="128"/>
+                                <state key="normal" title="✨"/>
                                 <connections>
-                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7d5-EV-mIO"/>
+                                    <action selector="showMessage2WithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jJF-Al-OmJ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="aUX-4W-spu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="5qD-pU-QQw"/>
+                            <constraint firstItem="1rQ-d7-SLx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DWH-RH-WeM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aUX-4W-spu" secondAttribute="trailing" constant="96" id="Gz8-T6-98w"/>
+                            <constraint firstItem="634-tS-Gwo" firstAttribute="top" secondItem="1rQ-d7-SLx" secondAttribute="bottom" constant="8" id="XDN-d0-brT"/>
+                            <constraint firstItem="634-tS-Gwo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ctz-Vc-3Le"/>
                             <constraint firstItem="aUX-4W-spu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="qBB-aW-vwq"/>
+                            <constraint firstItem="1rQ-d7-SLx" firstAttribute="top" secondItem="aUX-4W-spu" secondAttribute="bottom" constant="57.5" id="xso-o1-ynB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -57,8 +59,4 @@
             <point key="canvasLocation" x="-57.971014492753625" y="93.75"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="272125119007211" width="1024" height="1024"/>
-        <image name="star emoji" width="920" height="651"/>
-    </resources>
 </document>
