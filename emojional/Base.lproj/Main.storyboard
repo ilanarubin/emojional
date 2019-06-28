@@ -37,7 +37,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="128"/>
                                 <state key="normal" title="✨"/>
                                 <connections>
-                                    <action selector="showMessage2WithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jJF-Al-OmJ"/>
+                                    <action selector="showMessage2WithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="neg-rK-nU7"/>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="212-70-C4f"/>
                                 </connections>
                             </button>
                         </subviews>
